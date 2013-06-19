@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <exanto translate="label">
+            <label>Exanto</label>
+            <sort_order>7000</sort_order>
+        </exanto>
+    </tabs>
+    <sections>
+        <exanto_sphinxmage translate="label">
+            <label>Sphinxmage</label>
+            <tab>exanto</tab>
+            <sort_order>1005</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <options translate="label">
+                    <label>Autosuggest</label>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <numitems translate="label comment">
+                            <label>Number of Items</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[<span class="notice">Number of Items in Autosuggest dropdown</span>]]></comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </numitems>
+                        <textattr translate="label comment">
+                            <label>Text Attribute Code</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[<span class="notice">Product Attribute code for text in Dropdown</span>]]></comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </textattr>
+                        <textlen translate="label comment">
+                            <label>Text Length</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[<span class="notice">Max length of product text</span>]]></comment>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </textlen>
+                        <imgdim>
+                            <label>Thumbnail Size</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[<span class="notice">Width of Thumbnail Image</span>]]></comment>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </imgdim>
+                    </fields>
+                </options>
+                <sphinx>
+                    <label>Suchoptionen</label>
+                    <sort_order>110</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <wordforms translate="label comment">
+                            <label>Word Replacements</label>
+                            <frontend_type>textarea</frontend_type>
+                            <comment><![CDATA[
+                            <span class="notice">Word replacements before search is performed.
+                            Format is #search#replace#, one per line. Regex is supported, use like #/.*(foo)/i#bar$1#</span>
+                            ]]></comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </wordforms>
+                    </fields>
+                </sphinx>
+            </groups>
+        </exanto_sphinxmage>
+    </sections>
+</config>

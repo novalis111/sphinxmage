@@ -1,0 +1,17 @@
+<layout version="0.1.0">
+
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>exanto/sphinxmage.js</script></action>
+            <action method="addItem"><type>skin_css</type><name>css/sphinxmage.css</name></action>
+        </reference>
+    </default>
+
+    <xmlconnect_catalog_searchsuggest>
+        <action method="unsetChild">
+            <name>xmlconnect.catalog.search.suggest</name>
+        </action>
+        <!--<block type="xmlconnect/catalog_search_suggest" name="xmlconnect.catalog.search.suggest" output="toHtml"/>-->
+    </xmlconnect_catalog_searchsuggest>
+
+</layout>

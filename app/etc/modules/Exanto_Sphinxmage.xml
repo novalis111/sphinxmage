@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Exanto_Sphinxmage>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Exanto_Sphinxmage>
+    </modules>
+</config>

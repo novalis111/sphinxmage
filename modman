@@ -1,0 +1,6 @@
+app/code/local/Exanto/Sphinxmage                        app/code/local/Exanto/Sphinxmage
+app/etc/modules/Exanto_Sphinxmage.xml                   app/etc/modules/Exanto_Sphinxmage.xml
+app/design/frontend/base/default/layout/sphinxmage.xml  app/design/frontend/base/default/layout/sphinxmage.xml
+app/locale/de_DE/Exanto_Sphinxmage.csv                  app/locale/de_DE/Exanto_Sphinxmage.csv
+js/exanto/sphinxmage.js                                 js/exanto/sphinxmage.js
+skin/frontend/base/default/css/sphinxmage.css           skin/frontend/base/default/css/sphinxmage.css

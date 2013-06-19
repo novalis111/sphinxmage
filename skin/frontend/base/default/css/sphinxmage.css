@@ -1,0 +1,35 @@
+/* Exanto_Sphinxmage Styles */
+#search_autocomplete {
+    box-shadow: 0 0 3px #ccc;
+    z-index: 9000;
+}
+
+#search_autocomplete ul li {
+    font-size: .8em;
+    font-weight: normal !important;
+    padding: 5px;
+    width: 100%;
+}
+
+#search_autocomplete ul li.odd {
+    background-color: #f1f1f1;
+}
+
+#search_autocomplete ul li.even {
+    background-color: #fff;
+}
+
+#search_autocomplete ul li.showAll {
+    background-color: #ccc;
+    cursor: pointer !important;
+    padding: 5px;
+}
+
+#search_autocomplete ul li a {
+    font-size: 1.1em;
+}
+
+#search_autocomplete ul li img.sugImg {
+    float: left;
+    margin: 0 5px 0;
+}
