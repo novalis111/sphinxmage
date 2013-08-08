@@ -81,6 +81,33 @@
                         </wordforms>
                     </fields>
                 </sphinx>
+                <server>
+                    <label>Servereinstellungen</label>
+                    <sort_order>120</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <server_ip translate="label comment">
+                            <label>Server IP</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[<span class="notice">IP of Sphinx Server (default = 127.0.0.1)</span>]]></comment>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </server_ip>
+                        <server_port translate="label comment">
+                            <label>Server Port</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[<span class="notice">Port of Sphinx Server (default = 9312)</span>]]></comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </server_port>
+                    </fields>
+                </server>
             </groups>
         </exanto_sphinxmage>
     </sections>

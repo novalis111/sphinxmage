@@ -114,7 +114,15 @@ class Exanto_Sphinxmage_Helper_Data extends Mage_CatalogSearch_Helper_Data
         }
         // Connect to our Sphinx Search Engine and run our queries
         $sphinx = new Exanto_Sphinxmage_Model_SphinxClient();
-        $sphinx->SetServer('127.0.0.1', 9312);
+        $serverIp = Mage::getStoreConfig('exanto_sphinxmage/server/server_ip');
+        if (!$serverIp || count(explode('.', $serverIp)) != 4) {
+            $serverIp = '127.0.0.1';
+        }
+        $serverPort = (int)Mage::getStoreConfig('exanto_sphinxmage/server/server_port');
+        if (!$serverPort) {
+            $serverPort = 9312;
+        }
+        $sphinx->SetServer($serverIp, $serverPort);
         $sphinx->SetMatchMode(SPH_MATCH_EXTENDED);
         $sphinx->setFieldWeights(array(
             'name'            => 7,

@@ -119,6 +119,10 @@
                 <textlen><![CDATA[120]]></textlen>
                 <imgdim><![CDATA[48]]></imgdim>
             </options>
+            <server>
+                <server_ip><![CDATA[127.0.0.1]]></server_ip>
+                <server_port><![CDATA[9312]]></server_port>
+            </server>
         </exanto_sphinxmage>
     </default>
 </config>
